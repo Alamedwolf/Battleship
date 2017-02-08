@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivangmg.batallanavalenclase.BattleActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/radar"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearTodoJuego"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:id="@+id/linearFilas"
+            android:background="#358FF0"
+            android:weightSum="100"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:id="@+id/linearFila1"
+                android:weightSum="100">
+
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:id="@+id/linearFila1"
+                android:weightSum="100">
+
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:id="@+id/linearFila1"
+                android:weightSum="100">
+
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:id="@+id/linearFila1"
+                android:weightSum="100">
+
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:id="@+id/linearFila1"
+                android:weightSum="100">
+
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+                <Button
+                    android:text=" "
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/buttonclear"
+                    android:onClick="atacar" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"></View>
+            <TextView
+                android:text="No ha hecho ninguna accion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="#FFFF"
+                android:id="@+id/textMensaje"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:id="@+id/intentos"
+                android:textAlignment="center"
+                android:text="Intentos restantes"
+                android:textColor="#FFFF"
+                android:textSize="23dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:id="@+id/contadorintentos"
+                android:textAlignment="center"
+                android:text="13"
+                android:textColor="#FFFF"
+                android:textSize="23dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
