@@ -108,7 +108,7 @@ public class BattleActivity extends AppCompatActivity {
         final MediaPlayer bombplayer = MediaPlayer.create(this, R.raw.bomb);
 
         if(batalla.hayBarco(fila, columna)){
-            msg = "Tocado";
+            msg = "Hit";
             bombplayer.start();
             view.setBackgroundResource(R.drawable.bombita);
             view.setEnabled(false);
@@ -120,9 +120,9 @@ public class BattleActivity extends AppCompatActivity {
           if (contatk==9){
               resultado();
                 AlertDialog.Builder build1 = new AlertDialog.Builder(this);
-                build1.setMessage("Ganaste!"+score);
+                build1.setMessage("You Win! "+score);
                 build1.setCancelable(false);
-                build1.setPositiveButton("reiniciar",
+                build1.setPositiveButton("Restart",
                         new DialogInterface.OnClickListener(){
                     public void onClick(DialogInterface dialog,int id){
                         Intent intent = new Intent(BattleActivity.this, BattleActivity.class);
@@ -141,7 +141,7 @@ public class BattleActivity extends AppCompatActivity {
 
 
         }else{
-            msg = "Agua";
+            msg = "Water";
             aguaplayer.start();
             view.setBackgroundResource(R.drawable.fallo);
             view.setEnabled(false);
@@ -156,7 +156,7 @@ public class BattleActivity extends AppCompatActivity {
 
             //crear mensaje
             AlertDialog.Builder build2 = new AlertDialog.Builder(this);
-            build2.setMessage("No quedan más intentos!"+ score);
+            build2.setMessage("No more attemps! "+ score);
             build2.setCancelable(false);
             AlertDialog alert12 = build2.create();
             alert12.show();
@@ -183,7 +183,7 @@ public class BattleActivity extends AppCompatActivity {
         }
 
 
-        mensaje.setText(msg+" en "+fila+","+columna);
+        mensaje.setText(msg+" in "+fila+","+columna);
         viditas.setText(" "+vidas);
         if (vidas<=4){
             viditas.setTextColor(Color.parseColor("#FF0000"));}

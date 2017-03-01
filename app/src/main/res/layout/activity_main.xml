@@ -89,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="20"
-                android:id="@+id/linearFila1"
+                android:id="@+id/linearFila2"
                 android:weightSum="100">
 
                 <Button
@@ -135,7 +135,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="20"
-                android:id="@+id/linearFila1"
+                android:id="@+id/linearFila3"
                 android:weightSum="100">
 
                 <Button
@@ -181,7 +181,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="20"
-                android:id="@+id/linearFila1"
+                android:id="@+id/linearFila4"
                 android:weightSum="100">
 
                 <Button
@@ -227,7 +227,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="20"
-                android:id="@+id/linearFila1"
+                android:id="@+id/linearFila5"
                 android:weightSum="100">
 
                 <Button
@@ -288,8 +288,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="15"></View>
+
             <TextView
-                android:text="No ha hecho ninguna accion"
+                android:text="No action has been taken"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="30"
@@ -298,13 +299,14 @@
                 android:textColor="#FFFF"
                 android:id="@+id/textMensaje"
                 android:layout_gravity="center"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
+                android:layout_weight="12"
                 android:id="@+id/intentos"
                 android:textAlignment="center"
-                android:text="Intentos restantes"
+                android:text="Remaining attempts"
                 android:textColor="#FFFF"
                 android:textSize="23dp"
                 android:layout_gravity="center"/>

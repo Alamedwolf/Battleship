@@ -51,7 +51,7 @@
                     android:layout_weight="20"
                     android:id="@+id/jugar"
                     android:background="@drawable/btnall"
-                    android:text="JUGAR"
+                    android:text="PLAY"
                     android:textColor="#FFF"
                     android:textSize="20dp"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -74,7 +74,7 @@
                     android:layout_weight="20"
                     android:id="@+id/Acercadebtn"
                     android:background="@drawable/btnall"
-                    android:text="Acerca de"
+                    android:text="ABOUT US"
                     android:textColor="#FFF"
                     android:textSize="20dp"/>
 
