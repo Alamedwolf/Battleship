@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BattleShipp"
+        android:text="BattleShip"
         android:textColor="#FFF"
         android:layout_gravity="center"
         android:textSize="40dp"

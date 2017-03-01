@@ -27,8 +27,8 @@ public class Splash extends AppCompatActivity {
         final TextView spl = (TextView)findViewById(R.id.splashin);
         Typeface col = Typeface.createFromAsset(getAssets(),"colleged.ttf");
         spl.setTypeface(col);
-        /*final MediaPlayer musicplayer = MediaPlayer.create(this,R.raw.mdrums);
-        musicplayer.start();*/
+        final MediaPlayer musicplayer = MediaPlayer.create(this,R.raw.mdrums);
+        musicplayer.start();
 
 
 
