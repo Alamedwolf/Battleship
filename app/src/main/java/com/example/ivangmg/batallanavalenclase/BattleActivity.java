@@ -1,7 +1,7 @@
 package com.example.ivangmg.batallanavalenclase;
 
+import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -28,6 +30,7 @@ public class BattleActivity extends AppCompatActivity {
     int highscore;
     private TextView viditas;
     Handler mHandler;
+
     //SharedPreferences prefs;
     //SharedPreferences.Editor editorprefs;
     @Override
@@ -44,11 +47,11 @@ public class BattleActivity extends AppCompatActivity {
         viditas= (TextView) findViewById(R.id.contadorintentos);
         iniciarEtiquetas();
         batalla = new Batalla();
-
+        Typeface col = Typeface.createFromAsset(getAssets(),"colleged.ttf");
         final TextView ttx = (TextView)findViewById(R.id.textMensaje);
         final TextView tt2 = (TextView)findViewById(R.id.intentos);
         final TextView tt3 = (TextView)findViewById(R.id.contadorintentos);
-        Typeface col = Typeface.createFromAsset(getAssets(),"colleged.ttf");
+
         ttx.setTypeface(col);
         tt2.setTypeface(col);
         tt3.setTypeface(col);
@@ -119,21 +122,50 @@ public class BattleActivity extends AppCompatActivity {
             //Ganado
           if (contatk==9){
               resultado();
-                AlertDialog.Builder build1 = new AlertDialog.Builder(this);
-                build1.setMessage("You Win! "+score);
-                build1.setCancelable(false);
-                build1.setPositiveButton("Restart",
-                        new DialogInterface.OnClickListener(){
-                    public void onClick(DialogInterface dialog,int id){
-                        Intent intent = new Intent(BattleActivity.this, BattleActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                //cumstom dialog
+              final Dialog dialog = new Dialog(this);
+              dialog.setContentView(R.layout.dialoga);
+              Typeface col = Typeface.createFromAsset(getAssets(),"colleged.ttf");
+              //set custom dialog
+              TextView text = (TextView)dialog.findViewById(R.id.status);
+              text.setText("You WIN!");
+              text.setTypeface(col);
+              TextView texts = (TextView)dialog.findViewById(R.id.scoredlg);
+              texts.setText(Integer.toString(score));
+              texts.setTypeface(col);
+              Button menubtn = (Button)dialog.findViewById(R.id.btnmenu);
+              menubtn.setTypeface(col);
+              //button menu clicked then go to menu screen
+              menubtn.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View view) {
+                      Intent btn = new Intent(BattleActivity.this, Battle_menu.class);
+                      startActivity(btn);
+                      finish();
+                  }
+              });
+              Button restarbtn = (Button)dialog.findViewById(R.id.btnrestart);
+              restarbtn.setTypeface(col);
+              //button restart clicked then restar de game
+              restarbtn.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View view) {
+                      Intent intent = new Intent(BattleActivity.this, BattleActivity.class);
+                      startActivity(intent);
+                      finish();
+                  }
+              });
+              dialog.setCancelable(false);
+              dialog.show();
+              //custom dialog size
+              Window window = dialog.getWindow();
+              window.setLayout(1400,1000);
 
-                AlertDialog alert11 = build1.create();
-                alert11.show();
-                //alert11.dismiss();
+
+                      /*  Intent intent = new Intent(BattleActivity.this, BattleActivity.class);
+                        startActivity(intent);
+                        finish();*/
+
 
             }
 
@@ -152,33 +184,48 @@ public class BattleActivity extends AppCompatActivity {
         if (vidas==0 && contatk<9){
             resultado();
 
-            //pasar resultado
-
-            //crear mensaje
-            AlertDialog.Builder build2 = new AlertDialog.Builder(this);
-            build2.setMessage("No more attemps! "+ score);
-            build2.setCancelable(false);
-            AlertDialog alert12 = build2.create();
-            alert12.show();
-            //alert12.dismiss();
-            mHandler.postDelayed(new Runnable()
-            {
+            //cumstom dialog
+            final Dialog dialog = new Dialog(this);
+            dialog.setContentView(R.layout.dialoga);
+            Typeface col = Typeface.createFromAsset(getAssets(),"colleged.ttf");
+            //set custom dialog
+            TextView text = (TextView)dialog.findViewById(R.id.status);
+            text.setText("No more attemps!");
+            text.setTypeface(col);
+            TextView texts = (TextView)dialog.findViewById(R.id.scoredlg);
+            texts.setText(Integer.toString(score));
+            texts.setTypeface(col);
+            Button menubtn = (Button)dialog.findViewById(R.id.btnmenu);
+            //menubtn.setTypeface(col);
+            //button menu clicked then go to menu screen
+            menubtn.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void run() {
+                public void onClick(View view) {
+                    Intent btn = new Intent(BattleActivity.this, Battle_menu.class);
+                    startActivity(btn);
+                    finish();
+                }
+            });
+            Button restarbtn = (Button)dialog.findViewById(R.id.btnrestart);
+            //restarbtn.setTypeface(col);
+            //button restart clicked then restar de game
+            restarbtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
                     Intent intent = new Intent(BattleActivity.this, BattleActivity.class);
                     startActivity(intent);
                     finish();
-
                 }
-            }, 2000);
-                /*build2.setPositiveButton("reiniciar",
-                        new DialogInterface.OnClickListener(){
-                            public void onClick(DialogInterface dialog,int id){
-                                Intent intent = new Intent(BattleActivity.this, BattleActivity.class);
-                                startActivity(intent);
-                                finish();
-                            }
-                        });*/
+            });
+
+            dialog.setCancelable(false);
+            dialog.show();
+            //custom dialog size
+            Window window = dialog.getWindow();
+            window.setLayout(1400,1000);
+
+
+
 
         }
 

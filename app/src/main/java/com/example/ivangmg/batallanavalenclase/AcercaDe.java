@@ -28,7 +28,7 @@ public class AcercaDe extends AppCompatActivity {
 
         });
 
-        ImageView imgin = (ImageView)findViewById(R.id.inajpg);
+        /*ImageView imgin = (ImageView)findViewById(R.id.inajpg);
         imgin.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v){
@@ -39,7 +39,7 @@ public class AcercaDe extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });
+        });*/
 
 
     }

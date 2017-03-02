@@ -6,12 +6,16 @@
     android:layout_height="match_parent"
 
     tools:context="com.example.ivangmg.batallanavalenclase.AcercaDe">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="100"
-        android:background="#FFFF">
+        android:background="#FFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -69,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
-            android:text="With :"
+            android:text="Course teacher:"
             android:gravity="center"/>
         <TextView
             android:layout_width="match_parent"
